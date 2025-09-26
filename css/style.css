@@ -1,0 +1,278 @@
+/* 'Made Saonara' */
+@font-face {
+    font-family: 'Made Saonara';
+    src: url('./MADE_SAONARA.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Noto sans-serif;
+    color: #222;
+}
+#wrap_wrap{
+    min-width: 1900px;
+    overflow: hidden;
+}
+/* event */
+#event_wrap{
+    background-color: rgb(71, 141, 207);
+    height: 33px;
+}
+#event{
+    width: 1800px;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+}
+.coupon{
+    padding-top: 6px;
+    color: #fff;
+}
+
+/* header */
+#header_wrap{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'Made Saonara';
+    border-bottom: 1px solid #000;
+}
+.menu{
+    float: left;
+    display: flex;
+    margin-left: 35px;
+    margin-top: 53px;
+    margin-right: 455px;
+    font-size: 15px;
+}
+.menu li a{
+    padding: 20px;
+}
+.logo{
+    padding-top: 45px;
+    margin-right: 500px;
+}
+.gnb{
+    float: right;
+    display: flex;
+    margin-top: 53px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+.gnb li a{
+    padding: 25px;
+}
+
+/* main */
+#main_container {
+    display: flex;               /* 좌-우 배치 */
+    justify-content: space-between;
+    align-items: flex-start;     /* 위쪽 기준 */
+    width: 1700px;
+    margin: 100px auto;
+    gap: 40px;
+}
+
+/* 왼쪽 영역 (슬라이드 + 상세) */
+#left_area {
+    width: 1100px;
+}
+
+/* 슬라이드 */
+#wrap {
+    background-color: orange;
+    width: 860px;
+    height: 860px;
+    overflow: hidden;
+    margin: 0 auto;              /* 왼쪽 영역 안에서 가운데 정렬 */
+}
+
+.slide {
+    display: flex;
+    width: 860px;
+}
+
+.slide img {
+    width: 860px;
+}
+
+/* 슬라이드 밑 콘텐츠 */
+#main_left {
+    margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#main_left img {
+    display: block;
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 오른쪽 영역 (상품 정보) */
+#main_right {
+    width: 500px;
+    position: sticky; /* 스크롤해도 따라옴 */
+    top: 20px;        /* 화면 위에서 20px 떨어진 곳에 고정 */
+    align-self: flex-start;
+}
+
+#main_right h2 {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.price {
+    margin-top: 30px;
+}
+
+/* 옵션 박스 스타일 */
+.options {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 옵션 상자 사이 간격 */
+}
+.options select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #222;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    appearance: none;          /* 기본 화살표 제거 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #222;
+}
+
+.btn div a {
+    width: 246px;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 30px;
+    margin-right: 3px;
+    border: 1px solid #222;
+    display: block;
+}
+
+.btn div a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.help{
+    display: flex;
+    font-size: 13px;
+    font-family: 'Made Saonara';
+    margin-top: 20px;
+}
+.help li a{
+    padding-right: 30px;
+}
+.help li a:hover{
+    color: #747474;
+}
+
+/* footer */
+#footer_wrap {
+    height: 200px;
+    margin-top: 200px;
+    color: #222;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-family: 'Made Saonara';
+   border-bottom: #222 solid 1px;
+}
+
+#footer_gnb {
+    width: 1600px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+.bold {
+    font-weight: 500;
+    font-size: 18px;
+    color: #222;
+    padding-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    float: left;
+}
+
+.footer li {
+    padding-right: 100px;
+}
+
+.p text{
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.number {
+    color: #222;
+    font-size: 25px;
+}
+
+.a_tag {
+    margin-top: 20px;
+}
+
+.a_tag li {
+    margin-bottom: 8px;
+}
+
+.a_tag li a:hover {
+    color: rgb(75, 75, 75);
+}
+
+.contents{
+    float: right;
+    text-align: right;
+}
+#footer_wrap2{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Made Saonara';
+}
+.footer_p{
+    margin-top: 30px;
+}
